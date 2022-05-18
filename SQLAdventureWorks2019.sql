@@ -74,8 +74,7 @@ select COUNT(*) Gecikme from Sales.SalesOrderHeader oh where oh.DueDate < oh.Shi
 
 -- En çok siparişim hangi bölgeye gecikti ve kaç adet?
 
-select TerritoryID ,count (*) GecikmeSayisi from Sales.SalesOrderHeader oh
-where oh.DueDate < oh.ShipDate group by TerritoryID
+
 
 -- Vista kredi kartıyla kaç adet sipariş verilmiştir?
 

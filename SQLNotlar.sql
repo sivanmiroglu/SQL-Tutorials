@@ -1,4 +1,4 @@
-﻿
+﻿	
 -- SQL İLE İLGİLİ NOTLAR --
 
 -- Max : En büyük değeri verir.
@@ -123,3 +123,16 @@
 -- TRY CATH : Hata ayıklama kısmıdır. içerisine kodları yazarız herhangi hatada hatayaı fırlatr.
 -- hata bulma da daha hızlıdır. direk hatayı yakalar.
 
+--CREATE TRIGGER trg_add_Category
+--on Categoriess
+--AFTER INSERT -- DELETE diyerek kategori silebiriliz.
+--as
+--begin
+----Buradaki kod bloğu yeni bir kategori eklendikten SONRA ÇALIŞACAK
+--print('Yeni bir kategori eklendi!')
+--end
+--Disable TRIGGER dbo.trg_add_Category on Categories -- disable diyerek printe yazdığımız yazının görünmemesini sağlarız. Enable diyererk de görünmesini sağlarız.
+
+-- insert into Categories (CategoryName) values ('sport') 
+
+--delete from Categories where ID = 24 -- categories tablosunda id si 23 olan veri
